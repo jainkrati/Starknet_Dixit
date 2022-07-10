@@ -9,9 +9,16 @@ class Square extends React.Component {
       console.log('click');
     }
 
+    const cardStyle = {
+      backgroundImage: `url("`+this.props.value+`")`, 
+      backgroundColor: "lightblue",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    };
+
     return (
-      <button className="square" onClick={handleClick}>
-       <img src={this.props.value}/>
+      <button className="square" onClick={handleClick} style={cardStyle}>
      </button>
     );
   }
@@ -32,7 +39,7 @@ class Board extends React.Component {
         <div className="status">Current nominating player: {player}</div>
         <div className="status">Choose the image which matches the following description:</div>
         <div className="board-row">
-          {this.renderSquare("https://miro.medium.com/max/1400/1*yBCgIO7Az4yfvFqQRplG1A.png")}
+          {this.renderSquare("https://i.pinimg.com/564x/7a/18/59/7a18597181080f7dfa64268dd30aea8d.jpg")}
           {this.renderSquare("https://qphs.fs.quoracdn.net/main-qimg-525ed2c8bc94f8b987ff8cc01386f570")}
           {this.renderSquare("https://qphs.fs.quoracdn.net/main-qimg-296c255cf905e97cbbf450423c74d868.webp")}
         </div>
