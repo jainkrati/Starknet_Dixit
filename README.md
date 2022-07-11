@@ -1,5 +1,9 @@
 
 On chain Dixit(https://www.youtube.com/watch?v=Qi4MoW6NuaQ&t=5s) developed for Starknet hack with MatchBox DAO
+
+Demo is available at https://www.loom.com/share/7be3b0ae4ae34304bdb563b50c0b308d
+
+To run, hit following in terminal
 ### `npm start`
 
 How the game will work:
@@ -9,7 +13,7 @@ Each player gets 3 cards.
 Each round one player is randomly chosen to put a card out with a matching yet ambiguous description. Other players are supposed to put one card out as well. So each round we will see n cards from n players + 1 system generated card.
 Next all cards put out by players will be presented and based on the card which gets highest vote round winner will be decided.
 
-Smart contract for voting is partially done and deployed at https://www.loom.com/share/7be3b0ae4ae34304bdb563b50c0b308d
+Smart contract for voting is partially done and deployed at https://goerli.voyager.online/contract/0x7688b3220da1b63c8aca23d0b5bfdfdcfdf32f2845fe9389f4002543098eccd#writeContract 
 The winner player gets a winning NFT for which the on-chain NFT code is present under Contracts folder.
 
 Runs the app in the development mode.\
